@@ -31,13 +31,15 @@ namespace GameBalance_API
             //                        "\"marketType\": \"{{mmarket}}\"" +
             //                    "}";
             var users = new CreateRequestToken_DTO();
+            var users1 = new Model_GameBalance.Environment();
             users.userName = TestContext.DataRow["UserName"].ToString();
             users.password = TestContext.DataRow["Password"].ToString();
             users.sessionProductId = TestContext.DataRow["sessionProductId"].ToString();
             users.marketType = TestContext.DataRow["marketType"].ToString();
             users.numLaunchTokens = (int)TestContext.DataRow["numLaunchTokens"] ;
-            users.environment.clientTypeId = (int)TestContext.DataRow["clientTypeId"];
-            users.environment.languageCode = TestContext.DataRow["languageCode"].ToString();
+            users1.clientTypeId = (int)TestContext.DataRow["clientTypeId"];
+            users1.languageCode = TestContext.DataRow["languageCode"].ToString();
+            users.environment = users1;
             var demo = new Logic<Create_postDTO>();
             var user = demo.TestPOST(endpointURL, users);
             tokens = user.tokens.userToken;
@@ -50,15 +52,23 @@ namespace GameBalance_API
             string CID = System.Configuration.ConfigurationManager.AppSettings["cid"];
             string SID = System.Configuration.ConfigurationManager.AppSettings["sid"];
             string sessionID = System.Configuration.ConfigurationManager.AppSettings["sessionid"];
-            string jsonData = "{" + string.Format("\"packet\": {" +
-                "\"packetType\": 7," +
-                "\"payload\": \"<Pkt version='6'><Id mid='{0}' cid='{1}' sid='{2}' sessionid='{3}' verb='AdvSlot' clientLang='en'/><Request verbex='Refresh'/></Pkt>\"," +
-                "\"useFilter\": true," +
-                "\"isBase64Encoded\": false}", MID, CID, SID, sessionID) + "}";
+            string jsonData = "{" +
+                                    "\"packet\": {" +
+                                    "\"packetType\": 7," +
+                                    "\"payload\": \"<Pkt version='6'><Id mid='" + MID + "' cid='" + CID + "' sid='" + SID + "' sessionid='"+ sessionID +"' verb='AdvSlot' clientLang='en'/><Request verbex='Refresh'/></Pkt>\"," +
+                                    "\"useFilter\": true," +
+                                    "\"isBase64Encoded\": false" +
+                                    "}" +
+                             "}";
+            //string jsonData = "{" + string.Format("\"packet\": {" +
+            //    "\"packetType\": 7," +
+            //    "\"payload\": \"<Pkt version='6'><Id mid='{0}' cid='{1}' sid='{2}' sessionid='{3}' verb='AdvSlot' clientLang='en'/><Request verbex='Refresh'/></Pkt>\"," +
+            //    "\"useFilter\": true," +
+            //    "\"isBase64Encoded\": false}", MID, CID, SID, sessionID) + "}";
 
 
             var demo = new Logic<Response_postDTO>();
-            var user = demo.ResponseValidationPOST("v1/games/module/{moduleID} /client/{clientID}/play", jsonData , tokens);
+            var user = demo.ResponseValidationPOST("v1/games/module/{moduleID}/client/{clientID}/play", jsonData , tokens);
             var financialbalance =user.context.balances.totalInAccountCurrency;
             Type b=financialbalance.GetType();
             //bool b1 = Microsoft.VisualBasic.Information.IsNumeric(financialbalance);

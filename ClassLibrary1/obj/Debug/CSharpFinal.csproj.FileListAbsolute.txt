@@ -1,0 +1,15 @@
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\RestSharp.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\bin\Debug\RestSharp.xml
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\obj\Debug\CSharpFinal.csproj.AssemblyReference.cache
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\obj\Debug\CSharpFinal.csproj.CoreCompileInputs.cache
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\obj\Debug\CSharpFinal.csproj.CopyComplete
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\DANIEL\source\repos\CSharp2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

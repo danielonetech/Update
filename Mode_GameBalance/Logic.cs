@@ -24,8 +24,8 @@ namespace Model_GameBalance
         {
             var user = new APIHelper<Create_postDTO>();
             var url = user.SetUrl(endpoint);
-            var jsonReq = user.Serialize(jsonData);
-            var request = user.VerifyPostBody(jsonReq, tokens);
+            //var jsonReq = user.Serialize(jsonData);
+            var request = user.VerifyPostBody(jsonData, tokens);
             var response = user.GetResponse(url, request);
             Assert.AreEqual(201, (int)response.StatusCode);
             //Debug.WriteLine(response.Content);

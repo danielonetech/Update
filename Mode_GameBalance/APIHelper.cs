@@ -8,7 +8,7 @@ namespace Model_GameBalance
     {
         public IRestClient restClient;
         public IRestRequest restRequest;
-        public string baseUrl = System.Configuration.ConfigurationManager.AppSettings["baseUrl"];
+        public string baseUrl = System.Configuration.ConfigurationManager.AppSettings["baseURL"];
         //public string baseUrl = "https://reqres.in/";
 
         public IRestClient SetUrl(string endpoint)
@@ -36,8 +36,8 @@ namespace Model_GameBalance
         public IRestRequest VerifyPostBody(string body, string token)
         {
             //app config properties
-            string moduleID = System.Configuration.ConfigurationManager.AppSettings["moduleID"];
-            string clientID = System.Configuration.ConfigurationManager.AppSettings["clientID"];
+            string moduleID = System.Configuration.ConfigurationManager.AppSettings["moduleID1"];
+            string clientID = System.Configuration.ConfigurationManager.AppSettings["clientID1"];
             string Clienttypeid = System.Configuration.ConfigurationManager.AppSettings["X-Clienttypeid1"];
             string CorrelationId = System.Configuration.ConfigurationManager.AppSettings["X-CorrelationId1"];
             string XProductId = System.Configuration.ConfigurationManager.AppSettings["X-Route-ProductId"];

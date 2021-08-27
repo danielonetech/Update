@@ -1,3 +1,5 @@
+C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.csproj.AssemblyReference.cache
+C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.csproj.CoreCompileInputs.cache
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -17,8 +19,6 @@ C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\Microsoft.VisualS
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\RestSharp.xml
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\Newtonsoft.Json.xml
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\bin\Debug\nunit.framework.xml
-C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.csproj.AssemblyReference.cache
-C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.csproj.CoreCompileInputs.cache
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.csproj.CopyComplete
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.dll
 C:\Users\DANIEL\source\repos\CSharp2\GameBalance_API\obj\Debug\GameBalance_API.pdb
